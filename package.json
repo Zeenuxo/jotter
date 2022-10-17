@@ -1,0 +1,25 @@
+{
+  "name": "jotter",
+  "version": "1.0.0",
+  "description": "A simple 'To-Do' Web Application.",
+  "main": "app.js",
+  "scripts": {
+    "lite": "lite-server --port 5501",
+    "start": "npm run lite",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeenuxo/jotter.git"
+  },
+  "author": "Abhisekh Virli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zeenuxo/jotter/issues"
+  },
+  "homepage": "https://github.com/Zeenuxo/jotter#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.20"
+  }
+}

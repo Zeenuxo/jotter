@@ -1,0 +1,10 @@
+.time span{
+color:cyan;
+font-size: 80px;
+font-weight: 500px;
+
+}
+
+.date span{
+    color: grey;
+}
