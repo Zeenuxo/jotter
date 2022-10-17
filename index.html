@@ -61,7 +61,8 @@
         <!--  TITLE -------------------------------------------------------------------------------------------------------->
 
 
-    <div class="container-fluid bg-dark text-light p-5 my-4">
+<div class="container-fluid bg-dark text-light p-5 my-4">
+<div class="main">
 
         <div class="container bg-dark p-5">
             <h1 class="display-4 text-center my-4">JOTTER </h1><br>
@@ -74,40 +75,36 @@
 
     <!--  TIME & DATE  -------------------------------------------------------------------------------------------------------->
 
-    <div class="container-fluid bg-dark text-light p-5 my-4">
-
         <div class="container bg-dark p-5">
           <h1 class="text-center time">  <span id="time"></span> </h1>
           <h3 class="text-center date">  <span id="date"></span> </h3>
         </div>
 
 
-
-
-
-
     <!-- FORM -------------------------------------------------------------------------------------------------------->
-
-            <div class="mb-3">
+    <div class="todo_container">
+        <div class="add_task mb-3">
                 <label for="task" class="form-label">Task</label>
                 <input type="text" class="form-control" id="task">
                 <div class="form-text">Add a task name.</div>
-            </div>
+        </div>
 
-            <div class="mb-3">
+        <div class="add_desc mb-3">
                 <label for="description" class="form-label">Description</label>
                 <textarea type="text" class="form-control" id="description" rows="3"> </textarea>
                 <div class="form-text">Add a description of the task.</div>
-            </div>
-
-            <br>
-            <button type="submit"id="add" class="btn btn-primary">Add to List</button>
-
-
-        <div id="items" class="my-4">
-            <h2> Your Items</h2>
         </div>
 
+        <br>
+        <button type="submit"id="add" class="btn btn-primary">Add to List</button>
+
+
+
+        <!--Task List-->
+        <div class="task_list">
+        <div id="" class="my-4">
+            <h2> Your Items</h2>
+        </div>
 
         <table class="table table-dark table-hover">
             <thead>
@@ -130,16 +127,15 @@
               <tr>
 
             </tbody>
-          </table>
+        </table>
+
+        </div>
+</div>
+    
 
 
-
-
-
-
-
-
-    </div>
+</div>
+</div>
 
 
 

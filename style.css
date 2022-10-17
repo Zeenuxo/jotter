@@ -1,10 +1,36 @@
-.time span{
-color:cyan;
-font-size: 80px;
-font-weight: 500px;
+/*Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.time span {
+    color: cyan;
+    font-size: 80px;
+    font-weight: 500px;
 
 }
 
-.date span{
+.date span {
     color: grey;
+}
+
+
+.main{
+    /* border: 2px solid red; */
+    padding-left: 25rem;
+    padding-right: 25rem;
+
+}
+
+.task_list{
+    margin-top: 8rem;
+    padding: 0 0 8rem 0;
 }
