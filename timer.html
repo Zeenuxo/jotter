@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jotter | Timer </title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+   <!--FontAwesome-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+
+      <!--FontAwesome-->
+      <link rel="stylesheet" href="style.css" />
+
+</head>
+
+
+
+<body>
+
+    <!--  NAVBAR -------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Jotter</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="home">
+              <a class="nav-link active" href="index.html">
+              <i class="fa-solid fa-hourglass-end"></i>
+              Home
+              </a>
+              </li>
+
+
+              <li class="calendar"> 
+              <a class="nav-link active" href="calendar.html"> 
+              <i class="fa-solid fa-calendar"></i> 
+              Calendar
+              </a>
+              </li>
+
+              <li class="timer">
+              <a class="nav-link active" href="timer.html">
+              <i class="fa-solid fa-hourglass-end"></i>
+              Timer</a>
+              </li>
+
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+
+
+
+        <!--  TITLE -------------------------------------------------------------------------------------------------------->
+
+
+<div class="container-fluid bg-dark text-light p-5 my-4">
+<div class="main">
+
+        <div class="container bg-dark p-5">
+            <h1 class="display-4 text-center my-4">TIMER</h1><br>
+            <hr>
+            <p class="text-center">A Simple 'To-Do' Web App to help you jott down the important stuff. 🙂 </p>
+            <hr>
+        </div>
+
+
+
+    <!-- TIME & DATE  -------------------------------------------------------------------------------------------------------->
+
+
+
+
+    <!-- CALEDAR VIEW -------------------------------------------------------------------------------------------------------->
+      <div class="container_timer">
+      </div>
+    
+
+
+</div>
+</div>
+
+
+
+
+
+
+    <!--JQuery first, then Popper, then Bootsrap-->
+
+    <!--Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+    <!--App.js-->
+    <script src="app.js"></script>
+
+    <!--Date & Time js-->
+    <script src="time.js"></script>
+
+
+</body>
+
+
+
+
+</html>
