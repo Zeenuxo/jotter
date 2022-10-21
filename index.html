@@ -11,171 +11,107 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
    <!--FontAwesome-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-      <!--FontAwesome-->
+      <!--Style CSS-->
       <link rel="stylesheet" href="style.css" />
 
-    </head>
-
+</head>
 
 
 <body>
-
-    <!--  NAVBAR -------------------------------------------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Jotter</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<main class="app">
 
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <li class="home">
-            <a class="nav-link active" href="index.html">
-            <i class="fa-solid fa-hourglass-end"></i>
-            Home
-            </a>
-            </li>
+      <!-- APP INTRO -->
+      <section class="intro">
+      <h3>JOTTER | A Simple Task list</h2>
+      </section>
 
 
-            <li class="calendar"> 
-            <a class="nav-link active" href="calendar.html"> 
-            <i class="fa-solid fa-calendar"></i> 
-            Calendar
-            </a>
-            </li>
 
-            <li class="timer">
-            <a class="nav-link active" href="timer.html">
-            <i class="fa-solid fa-hourglass-end"></i>
-            Timer</a>
-            </li>
 
-          </ul>
 
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+      <!-- TASK TO DO -->
+      <section class="taskui">
+      <h3>I must </h3>
+
+        <form action="" id="taskui">
+        <input type="text" name="content" id="content" placeholder="E.g. Complete blogpost 3.">
+
+        <!-- Select Task Priority -->
+        <div class="priority">
+        <label>
+        <input type="radio" name="priority" id="priority-1" value="personal"/>
+        <!-- <span class="bubble business"></span> -->
+        <div>Personal</div>
+        </label>
+
+        <label>
+        <input type="radio" name="priority" id="priority-2" value="work"/>
+        <!-- <span class="bubble personals"></span> -->
+        <div>Work</div>
+        </label>
         </div>
-      </div>
-  </nav>
+        </form>
+
+        <!-- Add Task Button -->
+        <input type="submit" value="Add task"/>
+      </section>
 
 
 
 
 
-        <!--  TITLE -------------------------------------------------------------------------------------------------------->
+      <!-- TASK LIST -->
+      <section class="tasklist">
+      <h3>TASK LIST</h3> 
 
+        <div class="tasknote" id="tasknote">
 
-<div class="container-fluid bg-dark text-light p-5 my-4">
-<div class="main">
+        <div class="taskitem">
+        <label>
+        <input type="checkbox" />
+        <span class="bubble business"></span>
+        </label>
 
-        <div class="container bg-dark p-5">
-            <h1 class="display-4 text-center my-4">JOTTER </h1><br>
-            <hr>
-            <p class="text-center">A Simple 'To-Do' Web App to help you jott down the important stuff. 🙂 </p>
-            <hr>
-        </div>
-
-
-
-    <!--  TIME & DATE  -------------------------------------------------------------------------------------------------------->
-
-        <div class="container bg-dark p-5">
-          <h1 class="text-center time">  <span id="time"></span> </h1>
-          <h3 class="text-center date">  <span id="date"></span> </h3>
+        <div class="taskbox">
+        <input tyeoe="text" value="Get Milk" readonly />
         </div>
 
-
-    <!-- FORM -------------------------------------------------------------------------------------------------------->
-    <div class="todo_container">
-        <div class="add_task mb-3">
-                <label for="task" class="form-label">Task</label>
-                <input type="text" class="form-control" id="task">
-                <div class="form-text">Add a task name.</div>
+        <div class="taskbuttons">
+        <button class ="edit">Edit</button>
+        <button class="delete">Delete</button>
         </div>
-
-        <div class="add_desc mb-3">
-                <label for="description" class="form-label">Description</label>
-                <textarea type="text" class="form-control" id="description" rows="3"> </textarea>
-                <div class="form-text">Add a description of the task.</div>
         </div>
-
-        <br>
-        <button type="submit"id="add" class="btn btn-primary">Add to List</button>
-
-
-
-        <!--Task List-->
-        <div class="task_list">
-        <div id="" class="my-4">
-            <h2> Your Items</h2>
         </div>
-
-        <table class="table table-dark table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Task</th>
-                <th scope="col">Description</th>
-                <th scope="col">Status</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody id="table_inject">
-              <tr>
-                <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><button class="btn btn-primary">Delete</button></td>
-              </tr>
-              <tr>
-
-            </tbody>
-        </table>
-
-        </div>
-</div>
-    
-
-
-</div>
-</div>
+    </section>
 
 
 
 
 
+</main>
 
-    <!--JQuery first, then Popper, then Bootsrap-->
+      <!--JQuery first, then Popper, then Bootsrap-->
 
-    <!--Popper-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      <!--Popper-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
 
-    <!--Bootstrap.min-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      <!--Bootstrap.min-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
 
-    <!--App.js-->
-    <script src="app.js"></script>
+      <!--App.js-->
+      <script src="app.js"></script>
 
-    <!--Date & Time js-->
-    <script src="time.js"></script>
+      <!--Date & Time js-->
+      <script src="time.js"></script>
 
 
 </body>
-
-
-
-
 </html>

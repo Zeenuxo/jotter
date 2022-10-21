@@ -1,36 +1,100 @@
 /*Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-body {
+root{
+    --primary: #EA40A4;
+    --personal:#3a82ee;
+    --work: cyan;
+    --light: #eee;
+    --dark: #313154;
+    --grey: #888;
+    --delete:  #ff5b57;
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* RESET */
+* {
     margin: 0px;
     padding: 0px;
-    border: 0px;
-
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Reset borders of input and button elements */
+input:not([type="radio"]):not([type="checkbox"]), button {
+    appearance: none;
+    border: none;
+    background: none;
+}
+
+body{
+    background-color: #fab8ba;
+    color: var(--dark);
+}
+
+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h3 {
+    font-size:  1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    color: var(--grey);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.intro h3{
+    background: -webkit-linear-gradient(#313154 0%, #f68084);
+    font-size: 2em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.taskui input[type="text"]{
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    color: var(--dark);
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
 }
 
 
 
-.time span {
-    color: cyan;
-    font-size: 80px;
-    font-weight: 500px;
 
+
+
+
+
+
+
+
+
+/* DYNAMIC TIME & DATE */
+.timedate{}
+
+.time span {
+    color: #5E3C61;
+    font-size: 5rem;
+    font-weight: 500px;
 }
 
 .date span {
-    color: grey;
+    color: #5E3C61;
 }
 
 
-.main{
-    /* border: 2px solid red; */
-    padding-left: 25rem;
-    padding-right: 25rem;
-
-}
-
-.task_list{
-    margin-top: 8rem;
-    padding: 0 0 8rem 0;
-}
