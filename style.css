@@ -1,14 +1,12 @@
 /*Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-root{
-    --primary: #EA40A4;
-    --personal:#3a82ee;
-    --work: cyan;
-    --light: #eee;
-    --dark: #313154;
-    --grey: #888;
-    --delete:  #ff5b57;
+:root{
+
+    --bg: #fde7e8;
+    --text: #17181e;
+    --light: #00c9b0;
+    --dark:  #653b85;
     --shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
@@ -21,7 +19,7 @@ root{
   
 }
 
-/* Reset borders of input and button elements */
+/* Reset borders of input, radio button. checkbox, buttons*/
 input:not([type="radio"]):not([type="checkbox"]), button {
     appearance: none;
     border: none;
@@ -33,7 +31,7 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 } */
 
 body{
-    background-color: #fab8ba;
+    background-color: var(--bg);
 }
 
 section{
@@ -49,13 +47,6 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
-h4 {
-    color: var(--grey);
-    font-size: 0.8rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
 
 
 
@@ -63,7 +54,7 @@ h4 {
 
 
 .intro h3{
-    background: -webkit-linear-gradient(#313154 0%, #f68084);
+    background: -webkit-linear-gradient(#00c9b0 0%, #653b85 1%);
     font-size: 2em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -74,7 +65,7 @@ h4 {
     display: block;
     width: 100%;
     padding: 1rem 1.5rem;
-    color: var(--dark);
+    color: var(--text);
     background-color: #FFF;
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
@@ -98,11 +89,9 @@ h4 {
 .priority label {
     display: inline-block;
     background-color: #fff;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
-    box-shadow: var(--shadow);
     cursor: pointer;
 }
 
@@ -132,28 +121,25 @@ h4 {
 
 .prior input[type="radio"]:checked + .prior-content:after {
     content: "";
-    position: absolute;
-    background: #216fe0;
-    transition: ease-in 0.3s;
 }
 
 
 .prior input[type="radio"]:checked + .prior-content {
-    border: 2px solid #216ee0;
-    background: #eaf1fe;
+    border: 2px solid var(--light);
+    background: #fff;
     transition: ease-in 0.3s;
 }
 
 
 
-
+/* Add Task Button */
 .taskui input[type="submit"] {
     display: block;
     width: 100%;
     font-size: 1.15rem;
     padding: 1rem 1.15rem;
     color: #ffff;
-    background-color: #FF5786;
+    background-color: var(--light);
     border-radius: 0.5rem;
     transition: 0.2s ease-in-out;
 }
@@ -169,12 +155,12 @@ h4 {
 }
 
 .taskitems {
- display: flex;
- align-items: center;
- background-color: #fff;
- padding: 1rem;
- border-radius: 0.5rem;
- margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .taskitems label{
@@ -188,7 +174,6 @@ h4 {
 }
 
 .taskcontent{
-    color: var(--dark);
     font-size: 1.125rem;
 }
 
@@ -212,16 +197,21 @@ opacity: 0.75;
 }
 
 
+
+
+/* Task Button - Edit & Delete */
 .taskbuttons .edit{
-    background-color: #FF5786;
+    color: #fff;
+    background-color: var(--light);
 }
 
 .taskbuttons .delete{
-    background-color: #FF7D6B;
+    color: #fff;
+    background-color: var(--dark);
 }
 
 .done input{
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 
@@ -230,17 +220,19 @@ opacity: 0.75;
 /* DYNAMIC TIME & DATE */
 .timedate{
     display: grid;
-    justify-content: center;
+    justify-items: center;
 }
 
 .time {
-    color: #5E3C61;
+    color: var(--dark);
     font-size: 5rem;
     font-weight: 500;
 }
 
 .date {
-    color: #5E3C61;
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 
