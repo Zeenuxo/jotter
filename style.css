@@ -228,15 +228,18 @@ opacity: 0.75;
 
 
 /* DYNAMIC TIME & DATE */
-.timedate{}
-
-.time span {
-    color: #5E3C61;
-    font-size: 5rem;
-    font-weight: 500px;
+.timedate{
+    display: grid;
+    justify-content: center;
 }
 
-.date span {
+.time {
+    color: #5E3C61;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.date {
     color: #5E3C61;
 }
 
