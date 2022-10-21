@@ -38,27 +38,42 @@
       <h3>I must </h3>
 
         <form action="" id="taskui">
-        <input type="text" name="content" id="content" placeholder="E.g. Complete blogpost 3.">
+        <input type="text" name="content" id="content" placeholder="E.g. Complete blogpost 3."/>
+
 
         <!-- Select Task Priority -->
+        <h3>Set Priority </h3>
         <div class="priority">
-        <label>
-        <input type="radio" name="priority" id="priority-1" value="personal"/>
-        <!-- <span class="bubble business"></span> -->
+
+        <label class="prior">
+        <input checked type="radio" name="priority" id="" value="personal" />
+        <div class="prior-content">
+        <!-- <img loading="lazy" src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/life-saver-img.svg" alt="" /> -->
         <div>Personal</div>
-        </label>
-
-        <label>
-        <input type="radio" name="priority" id="priority-2" value="work"/>
-        <!-- <span class="bubble personals"></span> -->
-        <div>Work</div>
-        </label>
         </div>
-        </form>
+        </label>
 
+
+        <label class="prior">
+        <input type="radio"  name="priority" id="" value="work"/>
+        <div class="prior-content">
+        <!-- <img loading="lazy" src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/potted-plant-img.svg" alt="" /> -->
+        <div>Work</div>
+        </div>
+        </label>
+        
+        </div>
+      
         <!-- Add Task Button -->
         <input type="submit" value="Add task"/>
+
+      </form>
       </section>
+
+
+
+
+
 
 
 

@@ -28,6 +28,10 @@ input:not([type="radio"]):not([type="checkbox"]), button {
     background: none;
 }
 
+/* input[type="radio"], input[type="checkbox"]{
+   display: none;
+} */
+
 body{
     background-color: #fab8ba;
     color: var(--dark);
@@ -54,6 +58,11 @@ h4 {
 }
 
 
+
+
+
+
+
 .intro h3{
     background: -webkit-linear-gradient(#313154 0%, #f68084);
     font-size: 2em;
@@ -72,6 +81,94 @@ h4 {
     box-shadow: var(--shadow);
     margin-bottom: 1.5rem;
 }
+
+
+.taskui .priority {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    grid-auto-flow:column ;
+}
+
+
+
+
+
+
+.priority label {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+
+.priority {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    grid-auto-flow:column ;
+}
+
+.prior input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.prior-content {
+    display: flex;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    justify-content: center;
+}  
+
+
+.prior input[type="radio"]:checked + .prior-content:after {
+    content: "";
+    position: absolute;
+    background: #216fe0;
+    transition: ease-in 0.3s;
+}
+
+
+.prior input[type="radio"]:checked + .prior-content {
+    border: 2px solid #216ee0;
+    background: #eaf1fe;
+    transition: ease-in 0.3s;
+}
+
+
+
+
+.taskui input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1.15rem;
+    padding: 1rem 1.15rem;
+    color: #ffff;
+    background-color: #EA40A4;
+    border-radius: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.taskui input[type="submit"]:hover {
+    opacity: 0.75;
+}
+
+
+
+.tasklist .tasknote{
+    margin: 1rem;
+}
+
 
 
 
