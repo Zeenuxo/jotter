@@ -42,8 +42,8 @@ section{
 }
 
 h3 {
-    font-size:  1rem;
-    font-weight: 400;
+    font-size:  1.5rem;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
@@ -60,6 +60,18 @@ h3 {
     color: var(--dark);
 }
 
+
+.clock{
+    margin-top: 4rem;
+}
+
+.taskui{
+    margin-top: 4rem;
+}
+
+.tasklist{
+    margin-top: 4rem;
+}
 
 .intro h3{
     background: -webkit-linear-gradient(#00c9b0 0%, #653b85 1%);
