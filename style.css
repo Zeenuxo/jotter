@@ -47,10 +47,18 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
+.fa-user{
+    font-size: 1.35rem;
+    margin-right: 0.5rem;
+    color: var(--dark);
+}
 
 
-
-
+.fa-briefcase{
+    font-size: 1.35rem;
+    margin-right: 0.5rem;
+    color: var(--dark);
+}
 
 
 .intro h3{
