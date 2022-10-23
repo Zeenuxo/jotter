@@ -5,9 +5,9 @@ Check Out images folder or vercel link.
 
 
 <br>
-Built HTML, CSS and JS.
+Built using HTML, CSS and JS.
 <br>
-Hosted on Vercel - https://
+Hosted on Vercel - https://jotter-i4xq.vercel.app/
 
 <br>
 
