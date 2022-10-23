@@ -1,13 +1,12 @@
 # Jotter | A Simple Taskpad
 
 Jotter is a simple Task / To-do Web App that stores data on Local Storage of your browser. 
-Check Out images folder or vercel link.
 
 
 <br>
 Built using HTML, CSS and JS.
 <br>
-Hosted on Vercel - https://jotter-i4xq.vercel.app/
+Demo hosted on Vercel - https://jotter-i4xq.vercel.app/
 
 <br>
 
