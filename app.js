@@ -64,6 +64,7 @@ function showtasklist (){
     
 
         // Add Classes to the Elements
+        input.classList.add('checkbox');
         taskitems.classList.add('taskitems');
         taskcontent.classList.add('taskcontent');
         taskbuttons.classList.add('taskbuttons');
