@@ -20,7 +20,7 @@
 }
 
 /* Reset borders of input, radio button. checkbox, buttons*/
-input:not([type="radio"]):not([type="checkbox"]), button {
+input:not([type="radio"]):not([type="checkbox"]), button, textarea {
     appearance: none;
     border: none;
     background: none;
@@ -59,6 +59,22 @@ h3 {
     margin-right: 0.5rem;
     color: var(--dark);
 }
+
+.icon{
+    font-size: 1rem;
+    margin-right: 1.2rem;
+    color: var(--dark);
+}
+
+.user::before {
+    content: '\f007';
+    font: var(--fa-font-solid);
+  }
+
+  .briefcase::before {
+    content: '\f0b1';
+    font: var(--fa-font-solid);
+  }
 
 
 .clock{
@@ -170,7 +186,7 @@ h3 {
 
 
 
-.taskbox{
+.tasknote{
     margin: 1rem 0;
 }
 
@@ -189,13 +205,12 @@ h3 {
     cursor: pointer;
 }
 
-.taskcontent{
+.taskcontent {
     flex: 1 1 0%;
+    color: var(--dark);
+    font-size: 1rem;
 }
 
-.taskcontent{
-    font-size: 1.125rem;
-}
 
 .taskbuttons{
     display: flex;
@@ -230,7 +245,7 @@ opacity: 0.75;
     background-color: var(--dark);
 }
 
-.done input{
+.done textarea{
     text-decoration: line-through;
 }
 

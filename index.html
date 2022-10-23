@@ -2,20 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jotter | A Simple 'To-Do' Web Application</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Jotter | A Simple 'To-Do' Web Application</title>
     
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-   <!--FontAwesome-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--FontAwesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
       <!--Style CSS-->
       <link rel="stylesheet" href="style.css" />
-
 </head>
 
 
@@ -30,6 +28,9 @@
       </section>
 
 
+
+
+
       <!-- CLOCK -->
       <section class="clock">
       <div class="timedate">
@@ -38,40 +39,44 @@
       </div>  
       </section>
     
+    
 
 
-      <!-- TASK TO DO -->
+    
+      <!-- TASK UI -->
       <section class="taskui">
       <h3>I must </h3>
 
-        <form action="" id="taskui">
-        <input type="text" name="content" id="content" placeholder="E.g. Complete blogpost 3."/>
+      <!-- Taskbar to enter task -->
+      <form id="taskform">
+      <input type="text" name="taskbar" id="taskbar" placeholder="E.g. Complete blogpost 3."/>
 
 
-        <!-- Select Task Priority -->
-        <div class="priority">
+      <!-- Select Task Priority -->
+      <div class="priority">
 
-        <label class="prior">
-        <input checked type="radio" name="priority" id="" value="personal" />
-        <div class="prior-content">
-        <i class="fa-solid fa-user"></i>
-        <div>Personal</div>
-        </div>
-        </label>
+      <!-- Priority - Personal -->
+      <label class="prior">
+      <input type="radio" name="status" id="personal" value="personal" />
+      <div class="prior-content">
+      <i class="fa-solid fa-user"></i>
+      <div>Personal</div>
+      </div>
+      </label>
 
+      <!-- Priority - Work -->
+      <label class="prior">
+      <input type="radio"  name="status" id="work" value="work"/>
+      <div class="prior-content">
+      <i class="fa-solid fa-briefcase"></i>
+      <div>Work</div>
+      </div>
+      </label>
 
-        <label class="prior">
-        <input type="radio"  name="priority" id="" value="work"/>
-        <div class="prior-content">
-        <i class="fa-solid fa-briefcase"></i>
-        <div>Work</div>
-        </div>
-        </label>
-        
-        </div>
+      </div>
       
-        <!-- Add Task Button -->
-        <input type="submit" value="Add task"/>
+      <!-- Add Task Button -->
+      <input type="submit" value="Add task"/>
 
       </form>
       </section>
@@ -80,54 +85,43 @@
 
 
 
-
-
-
-
-
       <!-- TASK LIST -->
       <section class="tasklist">
-      <h3>TASK LIST</h3> 
+      <h3>Task List</h3> 
 
-        <!-- <div class="taskbox" id="tasknote">
+      <div class="tasknote" id="tasknote">
 
-        <div class="taskitems done">
-        <label>
-        <input type="checkbox" />
-        <span class="bubble business"></span>
-        </label>
+      <!-- <div class="taskitems done">
+      <label> <input type="checkbox" /> </label>
 
-        <div class="taskcontent">
-        <input tyeoe="text" value="Get Milk" readonly />
-        </div>
+      <div class="taskcontent">
+      <input type="text" value="Get Milk" readonly />
+      </div>
 
-        <div class="taskbuttons">
-        <button class ="edit">Edit</button>
-        <button class="delete">Delete</button>
-        </div>
-        </div>
-        </div>
+      <div class="taskbuttons">
+      <button class ="edit">Edit</button>
+      <button class="delete">Delete</button>
+      </div>
+      </div>
+      </div>
 
 
-        <div class="taskbox" id="tasknote">
+      <div class="taskbox" id="tasknote">
 
-          <div class="taskitems done">
-          <label>
-          <input type="checkbox" />
-          <span class="bubble business"></span>
-          </label>
+      <div class="taskitems done">
+      <label> <input type="checkbox" />  </label>
   
-          <div class="taskcontent">
-          <input tyeoe="text" value="Get Milk" readonly />
-          </div>
+      <div class="taskcontent">
+      <input type="text" value="Get Milk" readonly />
+      </div>
   
-          <div class="taskbuttons">
-          <button class ="edit">Edit</button>
-          <button class="delete">Delete</button>
-          </div>
-          </div>
-          </div> -->
-    </section>
+      <div class="taskbuttons">
+      <button class ="edit">Edit</button>
+      <button class="delete">Delete</button>
+      </div>
+      </div> -->
+      </div>
+      </section>
 
 
 
