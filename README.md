@@ -6,7 +6,7 @@ Jotter is a simple Task / To-do Web App that stores data on Local Storage of you
 <br>
 Built using HTML, CSS and JS.
 <br>
-Demo hosted on Vercel - https://jotter-i4xq.vercel.app/
+Demo hosted on Vercel - https://jotter.zeenux0.repl.co
 
 <br>
 
